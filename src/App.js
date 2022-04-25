@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Navbar from "./components/Navbar/index";
 import Home from "./components/About/index";
 import Footer from "./components/Footer/index";
+import Contact from "./components/Contact/index"
 import "./style.css"
 import "./App.css";
 
@@ -34,6 +35,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="*" element={<Navigate to="/"/>} />
+          <Route path="/contat" element={<Contact />} />
         </Routes>
         <Footer />
       </div>
