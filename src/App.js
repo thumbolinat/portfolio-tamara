@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "./components/Navbar/index";
 import Home from "./components/About/index";
+import Footer from "./components/Footer/index"
 
 import {
   BrowserRouter as Router,
@@ -31,7 +32,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="*" element={<Navigate to="/"/>} />
         </Routes>
-     
+        <Footer />
       </div>
     
     </Router>
