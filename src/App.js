@@ -1,20 +1,20 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "./components/Navbar/index";
 import Home from "./components/About/index";
-import Footer from "./components/Footer/index";
-import Contact from "./components/Contact/index";
 import Resume from "./components/Resume/index";
 import Projects from "./components/Projects/index";
-import "./style.css"
-import "./App.css";
-
-
+import Footer from "./components/Footer/index";
+import Contact from "./components/Contact/index";
 import {
   BrowserRouter as Router,
   Route,
   Routes,
   Navigate
 } from "react-router-dom";
+
+import "./style.css";
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -31,20 +31,17 @@ function App() {
     <Router>
       
       <div className="App" id={load ? "no-scroll" : "scroll"}>
-        
         <Navbar />
      
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="*" element={<Navigate to="/"/>} />
-          <Route path="/contat" element={<Contact />} />
+          <Route path="/project" element={<Projects />} />
           <Route path="/resume" element={<Resume />} />
-          <Route path="/projects" element={<Projects />} />
-
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<Navigate to="/"/>} />
         </Routes>
         <Footer />
       </div>
-    
     </Router>
   );
 }
