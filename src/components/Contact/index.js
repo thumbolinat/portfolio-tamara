@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Container, Row } from "react-bootstrap";
+import { Container, Row, Form } from "react-bootstrap";
 import { validateEmail } from "../../utils/helpers"
 import Button from "react-bootstrap/Button";
 
@@ -49,42 +49,37 @@ function Contact() {
      
         <Row style={{ justifyContent: "center", position: "relative" }}>
         <section>
-      <form id="contact-form" onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="name">Name:</label>
-          <input
-            type="text"
-            name="name"
-            defaultValue={name}
-            onBlur={handleChange}
-          />
-        </div>
-        <div>
-          <label htmlFor="email">Email address:</label>
-          <input
-            type="email"
-            name="email"
-            defaultValue={email}
-            onBlur={handleChange}
-          />
-        </div>
-        <div>
-          <label htmlFor="message">Message:</label>
-          <textarea
-            name="message"
-            rows="5"
-            defaultValue={message}
-            onBlur={handleChange}
-          />
-        </div>
+        
+      <Form>
+      <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+    <Form.Label>Name</Form.Label>
+    <Form.Control type="name" placeholder="your name" name="name" defaultValue={name}  onBlur={handleChange}/>
+      </Form.Group>    
+    <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+    <Form.Label>Email address</Form.Label>
+    <Form.Control type="email" placeholder="name@example.com" name="email" defaultValue={email} onBlur={handleChange} />
+    
+      </Form.Group>
+     <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+    <Form.Label>Message</Form.Label>
+    <Form.Control as="textarea" rows={3} name="message"  defaultValue={message}  onBlur={handleChange} />
+    </Form.Group>
+    </Form>
+
+
+
+    <form id="contact-form" onSubmit={handleSubmit}>
+          
+          <Button type="submit">Submit</Button>
+        </form>
         {errorMessage && (
           <div>
             <p className="error-text">{errorMessage}</p>
           </div>
         )}
-        <Button type="submit">Submit</Button>
-      </form>
-    </section>
+
+
+      </section>
   
 
 
