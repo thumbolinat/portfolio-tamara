@@ -57,3 +57,5 @@ function Tech() {
     </Row>
   );
 }
+
+export default Tech;

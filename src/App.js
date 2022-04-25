@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar/index";
 import Home from "./components/About/index";
 import Footer from "./components/Footer/index";
 import Contact from "./components/Contact/index"
+import Resume from "./components/Resume/index"
 import "./style.css"
 import "./App.css";
 
@@ -36,6 +37,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="*" element={<Navigate to="/"/>} />
           <Route path="/contat" element={<Contact />} />
+          <Route path="/resume" element={<Resume />} />
         </Routes>
         <Footer />
       </div>
