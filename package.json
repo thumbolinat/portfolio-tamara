@@ -2,7 +2,7 @@
   "name": "portfolio-tamara",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://thumbolinat.github.io/tamara-portfolio/",
+  "homepage": "https://thumbolinat.github.io/portfolio-tamara/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.4",
