@@ -2,8 +2,9 @@ import React, { useState, useEffect } from "react";
 import Navbar from "./components/Navbar/index";
 import Home from "./components/About/index";
 import Footer from "./components/Footer/index";
-import Contact from "./components/Contact/index"
-import Resume from "./components/Resume/index"
+import Contact from "./components/Contact/index";
+import Resume from "./components/Resume/index";
+import Projects from "./components/Projects/index";
 import "./style.css"
 import "./App.css";
 
@@ -38,6 +39,8 @@ function App() {
           <Route path="*" element={<Navigate to="/"/>} />
           <Route path="/contat" element={<Contact />} />
           <Route path="/resume" element={<Resume />} />
+          <Route path="/projects" element={<Projects />} />
+
         </Routes>
         <Footer />
       </div>
