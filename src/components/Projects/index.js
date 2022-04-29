@@ -8,6 +8,7 @@ import Demo from "../../Assets/Projects/Demo.gif";
 import screenshot2 from "../../Assets/Projects/screenshot2.jpg";
 import weatherdashboard from "../../Assets/Projects/weatherdashboard.jpg";
 import Picture1 from "../../Assets/Projects/Picture1.jpg";
+import Marakesh from "../../Assets/Projects/Marakesh.png";
 
 function Projects() {
   return (
@@ -81,6 +82,19 @@ function Projects() {
               description="Simple 1 page HTML and CSS porfolio"
               link="https://thumbolinat.github.io/portfolio/"
               link2="https://github.com/thumbolinat/portfolio"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={Marakesh}
+              title="Marakesh-North"
+              description="E-commerce app that connects buyers with wide array of products"
+              
+              link2="https://github.com/thumbolinat/portfolio-tamara" 
+
+             
+                       
             />
           </Col>
         </Row>
