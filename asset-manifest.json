@@ -1,21 +1,22 @@
 {
   "files": {
     "main.css": "/portfolio-tamara/static/css/main.5f50af20.css",
-    "main.js": "/portfolio-tamara/static/js/main.20b00c1f.js",
+    "main.js": "/portfolio-tamara/static/js/main.810c0832.js",
     "static/js/787.03a51689.chunk.js": "/portfolio-tamara/static/js/787.03a51689.chunk.js",
     "static/media/Demo.gif": "/portfolio-tamara/static/media/Demo.90f6a36337fe2189b470.gif",
     "static/media/ImgSmsh.png": "/portfolio-tamara/static/media/ImgSmsh.3979d3f68269c6d9c2ed.png",
+    "static/media/Marakesh.png": "/portfolio-tamara/static/media/Marakesh.28767da4b6d492f1c395.png",
     "static/media/Picture1.jpg": "/portfolio-tamara/static/media/Picture1.1b544f2e60977149e5e7.jpg",
     "static/media/weatherdashboard.jpg": "/portfolio-tamara/static/media/weatherdashboard.656a5a1f19590432cf5b.jpg",
     "static/media/Quiz.jpg": "/portfolio-tamara/static/media/Quiz.5f2a7b303e1c7c95f5fe.jpg",
     "static/media/screenshot2.jpg": "/portfolio-tamara/static/media/screenshot2.fe8d185c442765c602fd.jpg",
     "index.html": "/portfolio-tamara/index.html",
     "main.5f50af20.css.map": "/portfolio-tamara/static/css/main.5f50af20.css.map",
-    "main.20b00c1f.js.map": "/portfolio-tamara/static/js/main.20b00c1f.js.map",
+    "main.810c0832.js.map": "/portfolio-tamara/static/js/main.810c0832.js.map",
     "787.03a51689.chunk.js.map": "/portfolio-tamara/static/js/787.03a51689.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5f50af20.css",
-    "static/js/main.20b00c1f.js"
+    "static/js/main.810c0832.js"
   ]
 }
